@@ -1,5 +1,5 @@
 <template>
-  <div>footer</div>
+  <div>Ant- vue - admin ©2019 Created by Skyfly</div>
 </template>
 
 <script>

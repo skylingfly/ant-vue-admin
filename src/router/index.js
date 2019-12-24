@@ -118,9 +118,12 @@ const router = new VueRouter({
   base: process.env.BASE_URL,
   routes
 });
-
+// 路由守卫
 router.beforeEach((to, from, next) => {
-  NProgress.start();
+  if (to.path !== from.path) {
+    // 不同路径开启进度条
+    NProgress.start();
+  }
   next();
 });
 
